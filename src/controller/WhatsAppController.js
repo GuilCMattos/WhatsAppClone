@@ -276,7 +276,7 @@ export class WhatsAppController {
         });
 
         this.el.inputDocument.on('change', e => { 
-
+          
             if (this.el.inputDocument.files.length) { 
 
                 let file = this.el.inputDocument.files[0]
@@ -290,8 +290,11 @@ export class WhatsAppController {
                     this.el.imagePanelDocumentPreview.show();
                     this.el.filePanelDocumentPreview.show();
 
+                  
 
                 }).catch(err=>{
+
+                    
                     
                     switch (file.type) {
                         case 'application/vnd.openxmlformats-officedocument.wordprocessingml.document':
