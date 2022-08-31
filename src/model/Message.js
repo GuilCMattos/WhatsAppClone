@@ -129,7 +129,7 @@ export class Message extends Model {
                     
                     div.querySelector('.message-photo').show();
                     div.querySelector('._34Olu').hide();
-                    div.querySelector('._3v3PK').classList({
+                    div.querySelector('._3v3PK').css({
                         height: 'auto'
                     })
 
