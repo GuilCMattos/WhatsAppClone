@@ -484,6 +484,8 @@ export class Message extends Model {
 
         })
 
+
+
     }
        
 
@@ -493,7 +495,7 @@ export class Message extends Model {
 
 
                 Message.upload(file, from).then(snapshot=> { 
-    
+
                     let downloadFile = snapshot.downloadURL;
 
                     if(filePreview) {
@@ -531,6 +533,8 @@ export class Message extends Model {
 
                 });
     
+
+
 
            
 

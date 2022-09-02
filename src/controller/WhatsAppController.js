@@ -615,6 +615,7 @@ export class WhatsAppController {
         });
 
         this.el.btnSendPicture.on('click', e=> { 
+
             
             this.el.btnSendPicture.disabled = true;
 
@@ -624,7 +625,6 @@ export class WhatsAppController {
 
                 let canvas = document.createElement('canvas');
                 let context = canvas.getContext('2d');
-
                 canvas.setAttribute('width', picture.width);
                 canvas.setAttribute('height', picture.height);
 
