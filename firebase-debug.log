@@ -1,0 +1,103 @@
+[debug] [2022-09-02T11:39:46.556Z] ----------------------------------------------------------------------
+[debug] [2022-09-02T11:39:46.558Z] Command:       /home/clear/.nvm/versions/node/v8.11.1/bin/node /home/clear/.nvm/versions/node/v8.11.1/bin/firebase init
+[debug] [2022-09-02T11:39:46.558Z] CLI Version:   3.19.3
+[debug] [2022-09-02T11:39:46.558Z] Platform:      linux
+[debug] [2022-09-02T11:39:46.558Z] Node Version:  v8.11.1
+[debug] [2022-09-02T11:39:46.559Z] Time:          Fri Sep 02 2022 08:39:46 GMT-0300 (-03)
+[debug] [2022-09-02T11:39:46.559Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-02T11:39:46.563Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2022-09-02T11:39:46.564Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/clear/uatizap
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2022-09-02T11:39:49.531Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+  
+ Fri Sep 02 2022 08:39:49 GMT-0300 (-03)
+[debug] [2022-09-02T11:42:00.326Z] Error: connect ETIMEDOUT 104.197.85.31:443
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 104.197.85.31:443
+[debug] [2022-09-02T11:53:01.592Z] ----------------------------------------------------------------------
+[debug] [2022-09-02T11:53:01.594Z] Command:       /home/clear/.nvm/versions/node/v8.11.1/bin/node /home/clear/.nvm/versions/node/v8.11.1/bin/firebase deploy --only functions
+[debug] [2022-09-02T11:53:01.594Z] CLI Version:   3.19.3
+[debug] [2022-09-02T11:53:01.594Z] Platform:      linux
+[debug] [2022-09-02T11:53:01.594Z] Node Version:  v8.11.1
+[debug] [2022-09-02T11:53:01.594Z] Time:          Fri Sep 02 2022 08:53:01 GMT-0300 (-03)
+[debug] [2022-09-02T11:53:01.594Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-02T11:53:01.600Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-02T11:53:01.601Z] > authorizing via signed-in user
+[debug] [2022-09-02T11:53:01.602Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-09-02T11:53:01.602Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ { refresh_token: '1//0hw-6pC9D9rpOCgYIARAAGBESNwF-L9Ira2EUUTnbd0GltDZx2KXhmSVsVuBGZGcGa2nT5_xOnT2Fd7z6ZYCqgi2GzwyymAy0Nag',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Fri Sep 02 2022 08:53:01 GMT-0300 (-03)
+[debug] [2022-09-02T11:53:01.805Z] <<< HTTP RESPONSE 200
+[debug] [2022-09-02T11:53:01.814Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/whatsapp-clone-260ca  
+  
+ Fri Sep 02 2022 08:53:01 GMT-0300 (-03)
+[debug] [2022-09-02T11:55:12.884Z] Error: connect ETIMEDOUT 104.197.85.31:443
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 104.197.85.31:443
+[debug] [2022-09-02T12:15:55.174Z] ----------------------------------------------------------------------
+[debug] [2022-09-02T12:15:55.176Z] Command:       /home/clear/.nvm/versions/node/v8.11.1/bin/node /home/clear/.nvm/versions/node/v8.11.1/bin/firebase deploy --only functions
+[debug] [2022-09-02T12:15:55.177Z] CLI Version:   3.19.3
+[debug] [2022-09-02T12:15:55.177Z] Platform:      linux
+[debug] [2022-09-02T12:15:55.177Z] Node Version:  v8.11.1
+[debug] [2022-09-02T12:15:55.177Z] Time:          Fri Sep 02 2022 09:15:55 GMT-0300 (-03)
+[debug] [2022-09-02T12:15:55.177Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-02T12:15:55.185Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-02T12:15:55.185Z] > authorizing via signed-in user
+[debug] [2022-09-02T12:15:55.186Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/whatsapp-clone-260ca  
+  
+ Fri Sep 02 2022 09:15:55 GMT-0300 (-03)
+[debug] [2022-09-02T12:18:05.082Z] Error: connect ETIMEDOUT 104.197.85.31:443
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 104.197.85.31:443
+[debug] [2022-09-02T12:18:47.777Z] ----------------------------------------------------------------------
+[debug] [2022-09-02T12:18:47.779Z] Command:       /home/clear/.nvm/versions/node/v8.11.1/bin/node /home/clear/.nvm/versions/node/v8.11.1/bin/firebase deploy --only functions
+[debug] [2022-09-02T12:18:47.779Z] CLI Version:   3.19.3
+[debug] [2022-09-02T12:18:47.779Z] Platform:      linux
+[debug] [2022-09-02T12:18:47.779Z] Node Version:  v8.11.1
+[debug] [2022-09-02T12:18:47.779Z] Time:          Fri Sep 02 2022 09:18:47 GMT-0300 (-03)
+[debug] [2022-09-02T12:18:47.779Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-09-02T12:18:47.785Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-02T12:18:47.785Z] > authorizing via signed-in user
+[debug] [2022-09-02T12:18:47.787Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/whatsapp-clone-260ca  
+  
+ Fri Sep 02 2022 09:18:47 GMT-0300 (-03)
+[debug] [2022-09-02T12:20:59.159Z] Error: connect ETIMEDOUT 104.197.85.31:443
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 104.197.85.31:443

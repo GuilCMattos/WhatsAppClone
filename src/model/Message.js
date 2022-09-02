@@ -427,9 +427,33 @@ export class Message extends Model {
 
     static upload(file, from) { 
 
-       Upload.send(file,from)
+        return new Promise((s, f)=>{
 
-        }
+            let uploadTask = Firebase
+                .hd()
+                .ref(from)
+                .child(Date.now() + '_' + file.name)
+                .put(file);
+
+            uploadTask.on('state_changed', snapshot => {
+
+                console.log('upload', snapshot);
+
+            }, err => {
+
+                f(err);
+
+            }, success => {
+
+                s(uploadTask.snapshot);
+
+            });
+
+        });
+
+    }
+
+        
 
     static sendContact(chatId, from, contact) { 
 
@@ -460,6 +484,8 @@ export class Message extends Model {
 
         })
 
+
+
     }
        
 
@@ -469,7 +495,7 @@ export class Message extends Model {
 
 
                 Message.upload(file, from).then(snapshot=> { 
-    
+
                     let downloadFile = snapshot.downloadURL;
 
                     if(filePreview) {
@@ -507,6 +533,8 @@ export class Message extends Model {
 
                 });
     
+
+
 
            
 
